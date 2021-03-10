@@ -2,7 +2,7 @@ package com.Ebook.catalogue.models;
 
 public class BooksModel {
 	
-	 private Integer bookID;
+	 private Integer bookId;
 
 	 private String name;
 
@@ -10,12 +10,12 @@ public class BooksModel {
 
 	 private Integer quantity;
 
-	public Integer getBookID() {
-		return bookID;
+	public Integer getBookId() {
+		return bookId;
 	}
 
-	public void setBookID(Integer bookID) {
-		this.bookID = bookID;
+	public void setBookId(Integer bookId) {
+		this.bookId = bookId;
 	}
 
 	public String getName() {

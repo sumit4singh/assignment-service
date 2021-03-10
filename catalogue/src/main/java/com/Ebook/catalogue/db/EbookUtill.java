@@ -25,7 +25,7 @@ public class EbookUtill {
         while (cursor.hasNext()) {          	
         	Document book = cursor.next();
         	BooksModel book12 = new BooksModel();
-        	book12.setBookID(book.getInteger("bookId"));
+        	book12.setBookId(book.getInteger("bookId"));
         	book12.setGenres(book.getString("genres"));
         	book12.setQuantity(book.getInteger("quantity"));
         	book12.setName(book.getString("name"));        	
@@ -36,7 +36,7 @@ public class EbookUtill {
 	
 	public static Document ToDocument(BooksModel book) {
 		Document doc = new Document();
-		doc.put("bookId", book.getBookID());
+		doc.put("bookId", book.getBookId());
 		doc.put("genres", book.getGenres());
 		doc.put("quantity", book.getQuantity());
 		doc.put("name", book.getName());

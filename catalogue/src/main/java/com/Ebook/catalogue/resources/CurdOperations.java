@@ -59,9 +59,9 @@ public class CurdOperations {
 		return repo.LoanaBook(id);
 	}
 	
-//	@POST
-//	@Path("/delete")
-//	public Response DeleteBook(BooksModel book) {		
-//		return repo.DeleteBook(book);
-//	}	
+	@POST
+	@Path("/delete/{bookId}")
+	public Response DeleteBook(@PathParam("bookId") int id) {		
+		return repo.DeleteBook(id);
+	}	
 }
